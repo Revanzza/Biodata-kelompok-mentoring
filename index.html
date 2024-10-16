@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anggota Kelompok</title>
+    <script>
+        function showBiodata(anggota) {
+            const biodataElements = document.querySelectorAll('.biodata');
+            biodataElements.forEach(element => {
+                element.style.display = 'none'; 
+            });
+            document.getElementById(anggota).style.display = 'block'; 
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Biodata Anggota Kelompok</h1>
+        <p>Silakan pilih salah satu anggota untuk melihat biodata mereka.</p>
+    </header>
+    <div class="container">
+        <ul class="anggota-list">
+            <li onclick="showBiodata('anggota1')">Anggota 1: Febrian Crespo Pinontoan</li>
+            <li onclick="showBiodata('anggota2')">Anggota 2: Stefanus Gideon Mongkaren</li>
+            <li onclick="showBiodata('anggota3')">Anggota 3: Fathan Surya Azinuddin</li>
+            <li onclick="showBiodata('anggota4')">Anggota 4: Muhammad Revanza</li>
+        </ul>
+
+        <div id="anggota1" class="biodata">
+            <h2>Biodata Anggota 1</h2>
+            <img src="febrian.png" alt="Foto Profil Febrian" class="profil-img">
+            <p><strong>ID:</strong> 101</p>
+            <p><strong>Nama:</strong> Febrian Crespo Pinontoan</p>
+            <p><strong>Asal:</strong> - </p>
+            <p><strong>Hobi:</strong> - </p>
+            <p><strong>Username:</strong> username</p>
+            <p><strong>Home Directory:</strong> /home/directory</p>
+            <p><strong>Bukti Login SSH:</strong></p>
+            <img src="ssh-febrian.jpg" alt="Bukti Login SSH Febrian" class="ssh-img">
+            <p><strong>Role:</strong> DevOps Engineer </p>
+        </div>
+
+        <div id="anggota2" class="biodata" style="display: none;">
+            <h2>Biodata Anggota 2</h2>
+            <img src="stefanus.jpeg" alt="Foto Profil Stefanus" class="profil-img">
+            <p><strong>ID:</strong> 102</p>
+            <p><strong>Nama:</strong> Stefanus Gideon Mongkaren</p>
+            <p><strong>Asal:</strong> - </p>
+            <p><strong>Hobi:</strong> - </p>
+            <p><strong>Username:</strong> username</p>
+            <p><strong>Home Directory:</strong> /home/directory</p>
+            <p><strong>Bukti Login SSH:</strong></p>
+            <img src="ssh-stefanus.jpg" alt="Bukti Login SSH Stefanus" class="ssh-img">
+            <p><strong>Role:</strong> Shell Scripting & Automation Engineer</p>
+        </div>
+
+        <div id="anggota3" class="biodata" style="display: none;">
+            <h2>Biodata Anggota 3</h2>
+            <img src="fathan.jpeg" alt="Foto Profil Fathan" class="profil-img">
+            <p><strong>ID:</strong> 103</p>
+            <p><strong>Nama:</strong> Fathan Surya Azinuddin</p>
+            <p><strong>Asal:</strong> - </p>
+            <p><strong>Hobi:</strong> - </p>
+            <p><strong>Username:</strong> username</p>
+            <p><strong>Home Directory:</strong> /home/directory</p>
+            <p><strong>Bukti Login SSH:</strong></p>
+            <img src="ssh-fathan.jpg" alt="Bukti Login SSH Fathan" class="ssh-img">
+            <p><strong>Role:</strong> Version Control Manager</p>
+        </div>
+
+        <div id="anggota4" class="biodata" style="display: none;">
+            <h2>Biodata Anggota 4</h2>
+            <img src="revanza.jpg" alt="Foto Profil Revanza" class="profil-img">
+            <p><strong>ID:</strong> 104</p>
+            <p><strong>Nama:</strong> Muhammad Revanza</p>
+            <p><strong>Asal:</strong> - </p>
+            <p><strong>Hobi:</strong> - </p>
+            <p><strong>Username:</strong> username</p>
+            <p><strong>Home Directory:</strong> /home/directory</p>
+            <p><strong>Bukti Login SSH:</strong></p>
+            <img src="ssh-revanza.jpg" alt="Bukti Login SSH revanza" class="ssh-img">
+            <p><strong>Role:</strong> Frontend Developer</p>
+        </div>
+    </div>
+</body>
+</html>
